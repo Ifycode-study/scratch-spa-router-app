@@ -1,0 +1,25 @@
+{
+  "name": "scratch-spa-router-app",
+  "version": "1.0.0",
+  "description": "Scratch SPA Router App",
+  "main": "index.js",
+  "scripts": {
+    "start": "node @node_modules/@server/web.server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedevdrawer/spa-routing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/thedevdrawer/spa-routing/issues"
+  },
+  "homepage": "https://github.com/thedevdrawer/spa-routing#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

@@ -1,4 +1,4 @@
-import { register } from '../@lib/register.js';
+import { register } from './@static/register.js';
 
 const appName = 'Scratch Router App';
 
@@ -27,6 +27,14 @@ const routes = [
 			description: `${appName}'s contact page`,
 		},
 	},
+	{
+		path: '/404',
+		template: '/templates/404.html',
+		meta: {
+			title: `404 | ${appName}`,
+			description: `Page route not found`,
+		},
+	}
 ];
 
 register.appLevel.routes({ rootRoutes: routes });

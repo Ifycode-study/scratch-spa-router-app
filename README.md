@@ -1,7 +1,11 @@
-# Single Page Application Routing Using Hash or URL
+# Scratch SPA Router App
 
-One of the most asked code questions during a front-end interview is "Can you create a single page application with routes, without a framework?" In this tutorial, I show you how to create a custom routing system for your single page application using either the hash or URL method...without a framework.
+Single Page Application with vanilla js and node js, no frameworks.
 
-This tutorial shows you how to build a Single Page App using vanilla JavaScript. I show you how to implement client-side routing both ways (hash or URL) in an easy-to-use format that can be replicated for any project.
+## Learning resources
+Combined knowledge from these resources to build it:
+- [Dev Drawer | Vanilla JS Single Page Application Routes | # or URL](https://youtu.be/JmSb1VFoP7w)
+- [dcode | Build a Single Page Application with JavaScript (No Frameworks - Node JS)](https://www.youtube.com/watch?v=6BozpmSjk-Y)
 
-View video on YouTube: [https://youtu.be/JmSb1VFoP7w](https://youtu.be/JmSb1VFoP7w)
+## Fix for problems
+- Node JS express server setup `app.get() | TypeError: Missing parameter name at...` issue express v5: https://github.com/expressjs/express/issues/6428#issuecomment-2770648594
