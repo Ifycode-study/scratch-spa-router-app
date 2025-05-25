@@ -7,7 +7,7 @@ register.appLevel.routes = ({ rootRoutes }) => {
 
 	_url.locationHandler = async () => {
 		const location = window.location.pathname; // get the url path
-		if (location.length == 0) location = "/";
+		if (location.length == 0) location = '/';
 		//-------------------------
 		const currentRoute = rootRoutes.filter(route => route.path === location)[0];
 		//-------------------------
@@ -16,14 +16,14 @@ register.appLevel.routes = ({ rootRoutes }) => {
 		//-------------------------
 		document.title = currentRoute.meta.title;
 		document
-			.querySelector('meta[name="description"]')
-			.setAttribute("content", currentRoute.meta.description);
+			.querySelector('meta[name=\'description\']')
+			.setAttribute('content', currentRoute.meta.description);
 	};
 
 	_url.route = (event) => {
 		if (event) {
 			event.preventDefault();
-			window.history.pushState({}, "", event.target.href); // i.e .pushState(state, unused, target link);
+			window.history.pushState({}, '', event.target.href); // i.e .pushState(state, unused, target link);
 			_url.locationHandler();
 		}
 	};
@@ -31,7 +31,7 @@ register.appLevel.routes = ({ rootRoutes }) => {
     //-------------------------
 	document.addEventListener('click', (e) => {
 		const { target } = e;
-		if (!target.matches("nav a")) return;
+		if (!target.matches('nav a')) return;
 		e.preventDefault();
 		_url.route(e);
 	});
