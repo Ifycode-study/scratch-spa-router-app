@@ -5,7 +5,7 @@ const appName = 'Scratch Router App';
 const routes = [
 	{
 		path: '/',
-		template: '/templates/index.html',
+		template: '/templates/home.html',
 		meta: {
 			title: `Home | ${appName}`,
 			description: `${appName}'s home page`,
